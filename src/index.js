@@ -47,16 +47,16 @@ module.exports.handler = (event) => {
 
       console.log(top50);
 
-      // return {
-      //   statusCode: 200,
-      //   body: JSON.stringify(
-      //     {
-      //       message: top50,
-      //       input: event,
-      //     },
-      //     null,
-      //     2
-      //   ),
-      // };
+      return {
+        statusCode: 200,
+        body: JSON.stringify(
+          {
+            message: top50,
+            input: event,
+          },
+          null,
+          2
+        ),
+      };
   });
 };
